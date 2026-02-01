@@ -3,29 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>go-infra.cloud — Sergio Peralta</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <title>Sergio Peralta — Platform Engineering & Cloud Infrastructure</title>
+  <meta name="description" content="Backend engineer specializing in Go, Kubernetes, and Platform Engineering. Building reliable, scalable cloud-native systems.">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
-  <header class="mb-10">
-    <h1 class="text-4xl md:text-6xl font-bold text-cyan-400">Sergio Peralta</h1>
-    <p class="text-lg text-gray-400 mt-2">Go Developer • Infra/DevOps • Cloud Enthusiast</p>
-  </header>
-
-  <main class="space-y-4">
-    <p class="text-gray-300 max-w-xl">
-      I'm a backend engineer specializing in Go and Cloud Infrastructure. I work with Terraform, AWS, Kubernetes, observability tools, and automation pipelines. This site is my personal platform for projects, labs, and long-term infrastructure.
-    </p>
-
-    <div class="flex gap-4 justify-center pt-4 text-cyan-400 text-lg">
-      <a href="cv.html" class="hover:underline">View My CV</a>
-      <a href="https://github.com/seperalta22" class="hover:underline" target="_blank">GitHub</a>
-      <a href="mailto:youremail@example.com" class="hover:underline">Email</a>
+<body class="min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <nav class="border-b border-gray-800 bg-gray-900/50 backdrop-blur-sm sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold text-cyan-400 hover:text-cyan-300">go-infra.cloud</a>
+        <div class="flex gap-6 text-sm">
+          <a href="about.html" class="text-gray-300 hover:text-cyan-400 transition">About</a>
+          <a href="labs.html" class="text-gray-300 hover:text-cyan-400 transition">Labs</a>
+          <a href="blog.html" class="text-gray-300 hover:text-cyan-400 transition">Blog</a>
+          <a href="cv.html" class="text-gray-300 hover:text-cyan-400 transition">CV</a>
+        </div>
+      </div>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="flex-1">
+    <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-cyan-400 mb-4">Sergio Peralta</h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-6">
+        Backend Engineer → Platform Engineering
+      </p>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+        Building reliable, scalable cloud-native systems with Go, Kubernetes, and Infrastructure as Code. 
+        Focused on developer experience, observability, and platform thinking.
+      </p>
+      <div class="flex gap-4 justify-center">
+        <a href="about.html" class="bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-3 rounded-lg font-medium transition">
+          About Me
+        </a>
+        <a href="labs.html" class="border border-cyan-600 hover:border-cyan-500 text-cyan-400 hover:text-cyan-300 px-6 py-3 rounded-lg font-medium transition">
+          View Labs
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Content -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-white mb-8">Featured Work</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Featured Project 1 -->
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <h3 class="text-xl font-semibold text-cyan-400">Search Microservices @ Clubhub</h3>
+            <span class="text-xs text-gray-500 bg-gray-800 px-2 py-1 rounded">Production</span>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Developed and optimized search microservices using Go with hexagonal architecture. 
+            Implemented caching strategies, OpenTelemetry observability, and event-driven workflows with Temporal.io.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Go</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Hexagonal Architecture</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">OpenTelemetry</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Temporal.io</span>
+          </div>
+          <a href="cv.html#experience" class="text-cyan-400 hover:text-cyan-300 text-sm font-medium">
+            Learn more →
+          </a>
+        </div>
+
+        <!-- Featured Project 2 - Placeholder -->
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <h3 class="text-xl font-semibold text-cyan-400">Infrastructure Labs</h3>
+            <span class="text-xs text-gray-500 bg-gray-800 px-2 py-1 rounded">Personal</span>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Experimenting with Kubernetes operators, service mesh architectures, and platform engineering tooling. 
+            Exploring best practices for internal developer platforms and infrastructure automation.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Kubernetes</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Terraform</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Helm</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">IaC</span>
+          </div>
+          <a href="labs.html" class="text-cyan-400 hover:text-cyan-300 text-sm font-medium">
+            View labs →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-800">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold text-white mb-4">Let's Connect</h2>
+        <p class="text-gray-400 mb-6">
+          Interested in Platform Engineering, Go, or cloud-native systems? Let's talk.
+        </p>
+        <div class="flex gap-4 justify-center text-cyan-400">
+          <a href="https://github.com/seperalta22" class="hover:text-cyan-300 transition" target="_blank">GitHub</a>
+          <span class="text-gray-600">•</span>
+          <a href="https://linkedin.com/in/yourprofile" class="hover:text-cyan-300 transition" target="_blank">LinkedIn</a>
+          <span class="text-gray-600">•</span>
+          <a href="mailto:sergio@go-infra.cloud" class="hover:text-cyan-300 transition">Email</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="mt-10 text-sm text-gray-500">
-    © 2025 Sergio Peralta — go-infra.cloud
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
+      © 2025 Sergio Peralta — go-infra.cloud
+    </div>
   </footer>
 </body>
 </html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-950 text-white font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Sergio Peralta</title>
+  <meta name="description" content="Technical writing on Platform Engineering, Go, microservices architecture, and cloud-native systems.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <nav class="border-b border-gray-800 bg-gray-900/50 backdrop-blur-sm sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold text-cyan-400 hover:text-cyan-300">go-infra.cloud</a>
+        <div class="flex gap-6 text-sm">
+          <a href="about.html" class="text-gray-300 hover:text-cyan-400 transition">About</a>
+          <a href="labs.html" class="text-gray-300 hover:text-cyan-400 transition">Labs</a>
+          <a href="blog.html" class="text-cyan-400 font-medium">Blog</a>
+          <a href="cv.html" class="text-gray-300 hover:text-cyan-400 transition">CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1">
+    <div class="max-w-4xl mx-auto px-6 py-16">
+      <!-- Header -->
+      <section class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">Technical Blog</h1>
+        <p class="text-xl text-gray-300 max-w-3xl">
+          Deep dives into Platform Engineering, Go microservices, cloud-native architecture, 
+          and lessons learned from building production systems.
+        </p>
+      </section>
+
+      <!-- Filter/Categories -->
+      <section class="mb-8">
+        <div class="flex flex-wrap gap-3">
+          <button class="px-4 py-2 bg-cyan-600 text-white rounded-lg text-sm font-medium">All Posts</button>
+          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">Platform Engineering</button>
+          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">Go</button>
+          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">Architecture</button>
+          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">DevOps</button>
+        </div>
+      </section>
+
+      <!-- Blog Posts -->
+      <section class="space-y-6">
+        
+        <!-- Example Post 1 - Placeholder -->
+        <article class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h2 class="text-2xl font-semibold text-cyan-400 mb-2">
+                <a href="#" class="hover:text-cyan-300">Building Observable Microservices with OpenTelemetry</a>
+              </h2>
+              <div class="flex items-center gap-3 text-sm text-gray-500">
+                <time datetime="2025-01-15">Coming Soon</time>
+                <span>•</span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4">
+            How to implement distributed tracing, metrics, and logging in Go microservices using OpenTelemetry. 
+            Covering automatic instrumentation, custom spans, context propagation, and integration with Honeycomb 
+            and Grafana for production observability.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Go</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">OpenTelemetry</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Observability</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Microservices</span>
+          </div>
+        </article>
+
+        <!-- Example Post 2 - Placeholder -->
+        <article class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h2 class="text-2xl font-semibold text-cyan-400 mb-2">
+                <a href="#" class="hover:text-cyan-300">Migrating to Hexagonal Architecture in Go</a>
+              </h2>
+              <div class="flex items-center gap-3 text-sm text-gray-500">
+                <time datetime="2025-01-10">Coming Soon</time>
+                <span>•</span>
+                <span>12 min read</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Practical guide to refactoring monolithic Go applications into hexagonal (ports and adapters) architecture. 
+            Real-world examples from production systems, including how to separate domain logic, handle dependencies, 
+            and write testable code with proper layer separation.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Go</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Architecture</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Hexagonal Architecture</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Clean Code</span>
+          </div>
+        </article>
+
+        <!-- Example Post 3 - Placeholder -->
+        <article class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h2 class="text-2xl font-semibold text-cyan-400 mb-2">
+                <a href="#" class="hover:text-cyan-300">Platform Engineering: From Concept to Practice</a>
+              </h2>
+              <div class="flex items-center gap-3 text-sm text-gray-500">
+                <time datetime="2025-01-05">Coming Soon</time>
+                <span>•</span>
+                <span>10 min read</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4">
+            What Platform Engineering actually means beyond the buzzwords. Understanding the shift from DevOps to 
+            platform teams, building internal developer platforms (IDPs), and how to measure developer experience. 
+            Lessons from transitioning from backend engineering to platform thinking.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Platform Engineering</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">DevOps</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Developer Experience</span>
+          </div>
+        </article>
+
+        <!-- Example Post 4 - Placeholder -->
+        <article class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h2 class="text-2xl font-semibold text-cyan-400 mb-2">
+                <a href="#" class="hover:text-cyan-300">IaC Patterns for Multi-Environment Deployments</a>
+              </h2>
+              <div class="flex items-center gap-3 text-sm text-gray-500">
+                <time datetime="2025-01-01">Coming Soon</time>
+                <span>•</span>
+                <span>15 min read</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Terraform patterns for managing infrastructure across multiple environments without code duplication. 
+            Workspace strategies, module composition, remote state management, and testing approaches that scale 
+            from startups to enterprises.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Terraform</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">IaC</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">AWS</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">DevOps</span>
+          </div>
+        </article>
+
+        <!-- Example Post 5 - Placeholder -->
+        <article class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h2 class="text-2xl font-semibold text-cyan-400 mb-2">
+                <a href="#" class="hover:text-cyan-300">Event-Driven Microservices with Temporal.io</a>
+              </h2>
+              <div class="flex items-center gap-3 text-sm text-gray-500">
+                <time datetime="2024-12-20">Coming Soon</time>
+                <span>•</span>
+                <span>11 min read</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Building reliable, long-running workflows with Temporal.io in Go. Handling payment processing, 
+            saga patterns, and async operations with built-in retry, error handling, and observability. 
+            Moving from fragile background jobs to durable workflows.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Go</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Temporal.io</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Event-Driven</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Workflows</span>
+          </div>
+        </article>
+
+        <!-- Example Post 6 - Placeholder -->
+        <article class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-cyan-600 transition">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h2 class="text-2xl font-semibold text-cyan-400 mb-2">
+                <a href="#" class="hover:text-cyan-300">Kubernetes Operators: Extending the Control Plane</a>
+              </h2>
+              <div class="flex items-center gap-3 text-sm text-gray-500">
+                <time datetime="2024-12-15">Coming Soon</time>
+                <span>•</span>
+                <span>14 min read</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Introduction to building Kubernetes operators in Go. Understanding Custom Resource Definitions (CRDs), 
+            controllers, reconciliation loops, and how to automate complex operational tasks. Step-by-step guide 
+            from concept to deployment.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Kubernetes</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Go</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Operators</span>
+            <span class="text-xs bg-gray-800 text-cyan-400 px-2 py-1 rounded">Platform Engineering</span>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Coming Soon Notice -->
+      <section class="mt-12 bg-gray-900 border border-gray-800 rounded-lg p-8 text-center">
+        <h2 class="text-2xl font-bold text-white mb-4">More Content Coming Soon</h2>
+        <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+          I'm currently working on these posts and more. Each article will include real-world examples, 
+          code snippets, and architectural diagrams. Follow along to get notified when new content is published.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <a href="https://github.com/seperalta22" 
+             class="bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-3 rounded-lg font-medium transition"
+             target="_blank">
+            Follow on GitHub
+          </a>
+          <a href="mailto:sergio@go-infra.cloud" 
+             class="border border-cyan-600 hover:border-cyan-500 text-cyan-400 hover:text-cyan-300 px-6 py-3 rounded-lg font-medium transition">
+            Subscribe via Email
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
+      © 2025 Sergio Peralta — go-infra.cloud
+    </div>
+  </footer>
+</body>
+</html>

@@ -4,39 +4,219 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sergio Peralta — CV</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="Backend Engineer specializing in Go, Platform Engineering, and cloud-native infrastructure.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { padding: 0; max-width: 100%; }
+    }
+  </style>
 </head>
-<body class="px-8 py-12 max-w-3xl mx-auto">
-  <h1 class="text-3xl font-bold text-cyan-700 mb-2">Sergio Peralta</h1>
-  <p class="text-gray-600 mb-6">Go Developer · Infra & Cloud · DevOps</p>
+<body class="px-8 py-12 max-w-4xl mx-auto">
+  
+  <!-- Back to site link -->
+  <div class="no-print mb-6">
+    <a href="index.html" class="text-cyan-700 hover:text-cyan-600 text-sm">&larr; Back to go-infra.cloud</a>
+  </div>
 
-  <section class="mb-6">
-    <h2 class="text-xl font-semibold border-b pb-1 border-gray-300 mb-2">Profile</h2>
-    <p class="text-gray-800">
-      Self-taught engineer with experience in backend systems, infrastructure as code, observability, cloud services, and automation pipelines. I enjoy building reliable platforms and mastering tools that scale.
+  <!-- Header -->
+  <header class="mb-8 border-b-2 border-cyan-700 pb-4">
+    <h1 class="text-4xl font-bold text-cyan-700 mb-2">Sergio Peralta</h1>
+    <p class="text-lg text-gray-700 mb-3">Backend Engineer → Platform Engineering</p>
+    <div class="flex flex-wrap gap-4 text-sm text-gray-600">
+      <span>📧 sergio@go-infra.cloud</span>
+      <span>🔗 <a href="https://go-infra.cloud" class="text-cyan-700 hover:underline">go-infra.cloud</a></span>
+      <span>💻 <a href="https://github.com/seperalta22" class="text-cyan-700 hover:underline" target="_blank">github.com/seperalta22</a></span>
+    </div>
+  </header>
+
+  <!-- Profile -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-1 border-gray-300">Profile</h2>
+    <p class="text-gray-800 leading-relaxed">
+      Self-taught backend engineer transitioning to Platform Engineering with 2+ years of production experience 
+      building cloud-native microservices in Go. Focused on developer experience, infrastructure automation, 
+      observability, and building reliable platforms that scale. Experienced with hexagonal architecture, 
+      event-driven systems, and modern DevOps practices in AWS environments.
     </p>
   </section>
 
-  <section class="mb-6">
-    <h2 class="text-xl font-semibold border-b pb-1 border-gray-300 mb-2">Skills</h2>
-    <ul class="list-disc list-inside text-gray-800 space-y-1">
-      <li>Golang (Gin, Echo, REST APIs)</li>
-      <li>Terraform, Ansible, Makefiles</li>
-      <li>AWS (EC2, S3, IAM, VPC), Cloudflare</li>
-      <li>Docker, Kubernetes, Helm</li>
-      <li>Observability (OpenTelemetry, Grafana, Prometheus)</li>
-      <li>CI/CD (GitHub Actions, GitLab CI)</li>
-    </ul>
+  <!-- Technical Skills -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-1 border-gray-300">Technical Skills</h2>
+    
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-2">Languages & Frameworks</h3>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+          <li>Go (Gin, Echo, standard library)</li>
+          <li>HCL (Terraform configurations)</li>
+          <li>Bash/Shell scripting</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-2">Cloud & Infrastructure</h3>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+          <li>AWS (EC2, S3, IAM, VPC, Lambda)</li>
+          <li>Kubernetes, Docker, Helm</li>
+          <li>Terraform (Infrastructure as Code)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-2">Observability & Monitoring</h3>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+          <li>OpenTelemetry (distributed tracing)</li>
+          <li>Honeycomb, Grafana, Prometheus</li>
+          <li>Structured logging and metrics</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-2">Architecture & Patterns</h3>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+          <li>Hexagonal/Clean Architecture</li>
+          <li>Event-driven microservices</li>
+          <li>RESTful API design</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-2">Data & Messaging</h3>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+          <li>PostgreSQL, DynamoDB, Redis</li>
+          <li>RabbitMQ, SQS</li>
+          <li>Temporal.io (workflow orchestration)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-2">CI/CD & DevOps</h3>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+          <li>GitHub Actions, GitLab CI</li>
+          <li>SonarQube, golangci-lint</li>
+          <li>Automated testing (Go testing, Mockery)</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section class="mb-6">
-    <h2 class="text-xl font-semibold border-b pb-1 border-gray-300 mb-2">Experience</h2>
-    <p class="text-gray-800 mb-1"><strong>Backend Engineer</strong> — Clubhub (2023–now)</p>
-    <p class="text-gray-600 mb-3 text-sm">Worked on search microservices in Go, cache optimization, internal API integrations, payment workflows, and observability tooling.</p>
+  <!-- Experience -->
+  <section class="mb-8" id="experience">
+    <h2 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-1 border-gray-300">Professional Experience</h2>
+    
+    <div class="mb-6">
+      <div class="flex justify-between items-start mb-2">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Backend Engineer</h3>
+          <p class="text-cyan-700 font-medium">Clubhub</p>
+        </div>
+        <span class="text-gray-600 text-sm">2023 – Present</span>
+      </div>
+      
+      <p class="text-gray-800 mb-3 text-sm italic">
+        Building and maintaining microservices for a sports technology platform using Go, 
+        focusing on search functionality, payment workflows, and observability.
+      </p>
+
+      <div class="space-y-4">
+        <!-- Search Microservices -->
+        <div class="pl-4 border-l-2 border-cyan-700">
+          <h4 class="font-semibold text-gray-900 mb-1">Search Microservices & Optimization</h4>
+          <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+            <li>Designed and implemented search microservices using <strong>hexagonal architecture</strong> for clean separation of concerns</li>
+            <li>Optimized search performance with multi-layer <strong>caching strategies</strong> (Redis) reducing response times</li>
+            <li>Integrated with internal APIs and external services following RESTful best practices</li>
+            <li>Applied <strong>SOLID principles</strong> and DRY to ensure maintainable, decoupled code</li>
+          </ul>
+          <p class="text-xs text-gray-600 mt-2"><strong>Technologies:</strong> Go, Gin, Redis, PostgreSQL, REST APIs</p>
+        </div>
+
+        <!-- Payment Workflows -->
+        <div class="pl-4 border-l-2 border-cyan-700">
+          <h4 class="font-semibold text-gray-900 mb-1">Payment Workflow Orchestration</h4>
+          <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+            <li>Built reliable payment processing workflows using <strong>Temporal.io</strong> for durable execution</li>
+            <li>Implemented event-driven architecture for asynchronous payment state management</li>
+            <li>Ensured data consistency with saga patterns and compensation logic</li>
+            <li>Integrated with third-party payment providers with proper error handling and retries</li>
+          </ul>
+          <p class="text-xs text-gray-600 mt-2"><strong>Technologies:</strong> Go, Temporal.io, Event-driven architecture, PostgreSQL</p>
+        </div>
+
+        <!-- Observability -->
+        <div class="pl-4 border-l-2 border-cyan-700">
+          <h4 class="font-semibold text-gray-900 mb-1">Observability & Monitoring</h4>
+          <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+            <li>Implemented distributed tracing with <strong>OpenTelemetry</strong> across microservices</li>
+            <li>Integrated with <strong>Honeycomb</strong> for production observability and debugging</li>
+            <li>Created structured logging standards and metrics collection for improved visibility</li>
+            <li>Reduced MTTR (Mean Time To Resolution) by improving trace context propagation</li>
+          </ul>
+          <p class="text-xs text-gray-600 mt-2"><strong>Technologies:</strong> OpenTelemetry, Honeycomb, Structured Logging</p>
+        </div>
+
+        <!-- Code Quality -->
+        <div class="pl-4 border-l-2 border-cyan-700">
+          <h4 class="font-semibold text-gray-900 mb-1">Code Quality & Testing</h4>
+          <ul class="list-disc list-inside text-gray-800 space-y-1 text-sm">
+            <li>Maintained high code quality standards passing <strong>SonarQube</strong> and <strong>golangci-lint</strong> checks</li>
+            <li>Wrote comprehensive unit tests using Go's testing package and <strong>Mockery</strong> for mocks</li>
+            <li>Followed Clubhub's quality standards ensuring no anti-patterns or unnecessary dependencies</li>
+            <li>Implemented validation and security best practices (SQL injection prevention, proper auth)</li>
+          </ul>
+          <p class="text-xs text-gray-600 mt-2"><strong>Technologies:</strong> Go testing, Mockery, SonarQube, golangci-lint</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer class="text-xs text-gray-500 mt-8">
-    This CV is printable and exportable via browser (File → Print → Save as PDF).
+  <!-- Projects -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-1 border-gray-300">Personal Projects</h2>
+    
+    <div class="space-y-4">
+      <div class="pl-4 border-l-2 border-gray-400">
+        <h3 class="font-semibold text-gray-900 mb-1">go-infra.cloud</h3>
+        <p class="text-gray-800 text-sm mb-2">
+          Personal platform for technical writing, labs, and infrastructure experiments. Static site showcasing 
+          Platform Engineering projects and architecture deep-dives.
+        </p>
+        <p class="text-xs text-gray-600"><strong>Technologies:</strong> HTML, Tailwind CSS, GitHub Pages</p>
+      </div>
+
+      <div class="pl-4 border-l-2 border-gray-400">
+        <h3 class="font-semibold text-gray-900 mb-1">Infrastructure Labs <span class="text-xs text-gray-500">(In Progress)</span></h3>
+        <p class="text-gray-800 text-sm mb-2">
+          Exploring Kubernetes operators, service mesh architectures, and platform engineering patterns. 
+          Building reusable IaC modules and experimenting with developer platform tooling.
+        </p>
+        <p class="text-xs text-gray-600"><strong>Technologies:</strong> Kubernetes, Terraform, Helm, Go</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Learning -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-1 border-gray-300">Education & Learning</h2>
+    <div>
+      <h3 class="font-semibold text-gray-900">Self-Taught Engineer</h3>
+      <p class="text-gray-800 text-sm mb-2">
+        Continuous learning through hands-on projects, technical documentation, and production experience.
+      </p>
+      <p class="text-gray-800 text-sm">
+        <strong>Current Focus:</strong> Platform Engineering principles, Kubernetes operators, service mesh 
+        architectures, SRE practices, and internal developer platforms.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-xs text-gray-500 mt-12 pt-6 border-t border-gray-300">
+    <p class="mb-2">This CV is optimized for printing and PDF export via browser (File → Print → Save as PDF).</p>
+    <p>© 2025 Sergio Peralta — For more details, visit <a href="https://go-infra.cloud" class="text-cyan-700 hover:underline">go-infra.cloud</a></p>
   </footer>
 </body>
 </html>
