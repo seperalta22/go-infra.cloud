@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Labs — Sergio Peralta</title>
   <meta name="description" content="Technical experiments and infrastructure projects in Go, Kubernetes, and Platform Engineering.">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://go-infra.cloud/labs.html">
+  <meta property="og:title" content="Labs — Sergio Peralta">
+  <meta property="og:description" content="Technical experiments and infrastructure projects in Go, Kubernetes, and Platform Engineering.">
+  <meta property="og:image" content="https://go-infra.cloud/og-image.png">
+  
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -37,12 +45,12 @@
 
       <!-- Filter/Categories -->
       <section class="mb-8">
-        <div class="flex flex-wrap gap-3">
-          <button class="px-4 py-2 bg-cyan-600 text-white rounded-lg text-sm font-medium">All</button>
-          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">Infrastructure as Code</button>
-          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">Kubernetes</button>
-          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">Observability</button>
-          <button class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition">Platform Tooling</button>
+        <div class="flex flex-wrap gap-3" id="filter-buttons">
+          <button onclick="filterProjects('all')" class="filter-btn active px-4 py-2 bg-cyan-600 text-white rounded-lg text-sm font-medium transition" data-filter="all">All</button>
+          <button onclick="filterProjects('iac')" class="filter-btn px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition" data-filter="iac">Infrastructure as Code</button>
+          <button onclick="filterProjects('kubernetes')" class="filter-btn px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition" data-filter="kubernetes">Kubernetes</button>
+          <button onclick="filterProjects('observability')" class="filter-btn px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition" data-filter="observability">Observability</button>
+          <button onclick="filterProjects('platform')" class="filter-btn px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 hover:border-cyan-600 rounded-lg text-sm font-medium transition" data-filter="platform">Platform Tooling</button>
         </div>
       </section>
 
@@ -50,7 +58,7 @@
       <section class="space-y-8">
         
         <!-- Infrastructure as Code Section -->
-        <div>
+        <div class="project-section" data-category="iac">
           <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
             <span class="text-cyan-400 mr-2">▸</span>
             Infrastructure as Code
@@ -102,7 +110,7 @@
         </div>
 
         <!-- Kubernetes & Orchestration Section -->
-        <div>
+        <div class="project-section" data-category="kubernetes">
           <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
             <span class="text-cyan-400 mr-2">▸</span>
             Kubernetes & Orchestration
@@ -154,7 +162,7 @@
         </div>
 
         <!-- Observability Section -->
-        <div>
+        <div class="project-section" data-category="observability">
           <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
             <span class="text-cyan-400 mr-2">▸</span>
             Observability & Monitoring
@@ -206,7 +214,7 @@
         </div>
 
         <!-- Platform Tooling Section -->
-        <div>
+        <div class="project-section" data-category="platform">
           <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
             <span class="text-cyan-400 mr-2">▸</span>
             Platform Tooling
@@ -287,5 +295,33 @@
       © 2025 Sergio Peralta — go-infra.cloud
     </div>
   </footer>
+
+  <!-- Filter functionality -->
+  <script>
+    function filterProjects(category) {
+      const sections = document.querySelectorAll('.project-section');
+      const buttons = document.querySelectorAll('.filter-btn');
+      
+      // Update button states
+      buttons.forEach(btn => {
+        if (btn.dataset.filter === category) {
+          btn.classList.add('active', 'bg-cyan-600', 'text-white');
+          btn.classList.remove('bg-gray-900', 'border', 'border-gray-800', 'text-gray-300');
+        } else {
+          btn.classList.remove('active', 'bg-cyan-600', 'text-white');
+          btn.classList.add('bg-gray-900', 'border', 'border-gray-800', 'text-gray-300');
+        }
+      });
+      
+      // Filter sections
+      sections.forEach(section => {
+        if (category === 'all' || section.dataset.category === category) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+  </script>
 </body>
 </html>

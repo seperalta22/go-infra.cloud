@@ -5,19 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sergio Peralta — CV</title>
   <meta name="description" content="Backend Engineer specializing in Go, Platform Engineering, and cloud-native infrastructure.">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://go-infra.cloud/cv.html">
+  <meta property="og:title" content="Sergio Peralta — CV">
+  <meta property="og:description" content="Backend Engineer with 2+ years experience building cloud-native microservices in Go. Transitioning to Platform Engineering.">
+  <meta property="og:image" content="https://go-infra.cloud/og-image.png">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @media print {
       .no-print { display: none !important; }
       body { padding: 0; max-width: 100%; }
+      header { margin-bottom: 1rem; }
+      section { page-break-inside: avoid; }
     }
   </style>
 </head>
 <body class="px-8 py-12 max-w-4xl mx-auto">
   
-  <!-- Back to site link -->
-  <div class="no-print mb-6">
+  <!-- Back to site link & Download button -->
+  <div class="no-print mb-6 flex justify-between items-center">
     <a href="index.html" class="text-cyan-700 hover:text-cyan-600 text-sm">&larr; Back to go-infra.cloud</a>
+    <button onclick="window.print()" class="bg-cyan-700 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+      Download PDF
+    </button>
   </div>
 
   <!-- Header -->
